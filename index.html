@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jisung Park - NCT DREAM</title>
+    <style>
+        /* 全局样式重置与基础设置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 头部样式 */
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #e8f4f8 0%, #f0f8fb 100%);
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: #2e7d32; /* 更柔和的绿色 */
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #2e7d32, transparent);
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* 主要内容容器 */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        /* 头像区域 */
+        .profile-img {
+            text-align: center;
+        }
+
+        .profile-img img {
+            width: 250px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img img:hover {
+            transform: scale(1.05);
+        }
+
+        /* 个人信息区域 */
+        .profile-info {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #d32f2f; /* 更协调的红色 */
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        /* 信息卡片样式 */
+        .info-card {
+            margin-top: 20px;
+        }
+
+        .info-card h3 {
+            color: #2e7d32;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .info-card ul {
+            list-style: none;
+            padding-left: 10px;
+        }
+
+        .info-card li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .info-card li::before {
+            content: "•";
+            color: #d32f2f;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+
+        /* 响应式设计 - 移动端适配 */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .profile-img img {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO JISUNG PARK</h1>
+        <hr>
+    </header>
+
+    <div class="container">
+        <div class="profile-img">
+            <img src="jisung1.png" alt="Jisung Park">
+        </div>
+
+        <div class="profile-info">
+            <h2>About Me</h2>
+            <p>Hello, my name is Jisung Park (朴志晟). I'm from Seoul, South Korea, and I'm a member of the South Korean boy group NCT DREAM under SM Entertainment.</p>
+            <p>I was born on February 5, 2002, and I am the youngest member (maknae) of NCT DREAM. I debuted in 2016 and have been active as a dancer, rapper, and vocalist in the group.</p>
+
+            <div class="info-card">
+                <h3>Key Information</h3>
+                <ul>
+                    <li>Stage Name: Jisung (지성)</li>
+                    <li>Birth Name: Park Ji-sung (박지성)</li>
+                    <li>Birth Date: February 5, 2002</li>
+                    <li>Nationality: South Korean</li>
+                    <li>Position: Main Dancer, Rapper, Vocalist, Maknae</li>
+                    <li>Group: NCT DREAM, NCT, NCT U</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>My Hobbies</h3>
+                <ul>
+                    <li>Dancing (Hip-hop, Contemporary)</li>
+                    <li>Listening to music</li>
+                    <li>Playing sports (Basketball, Soccer)</li>
+                    <li>Spending time with members</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
